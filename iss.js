@@ -20,7 +20,7 @@ const fetchCoordsByIP = function(ip, callback) {
 
     const { latitude, longitude } = body;
 
-    callback(null, { latitude: latitude.toString(), longitude: longitude.toString() });
+    callback(null, { latitude, longitude });
   });
 };
 
